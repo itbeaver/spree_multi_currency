@@ -1,7 +1,7 @@
 module Spree
   module CurrencyHelpers
     def self.included(receiver)
-      receiver.send :helper_method, :supported_currencies
+      receiver.send :helper_method, :supported_currencies, :supported_regions
     end
 
     def supported_currencies
